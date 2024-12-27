@@ -1,9 +1,10 @@
-8064
+8067
 65/home/young_xster/codes/repos/forkify-project/src/img/favicon.png1644221922000000000 0
 63/home/young_xster/codes/repos/forkify-project/src/img/icons.svg1644221922000000000 0
 53/home/young_xster/codes/repos/forkify-project/src/img1735223392000000000 1
-57/home/young_xster/codes/repos/forkify-project/src/js/view1735297091661325274 1
-62/home/young_xster/codes/repos/forkify-project/src/js/config.js1735305618313384930 0
+71/home/young_xster/codes/repos/forkify-project/src/js/view/searchView.js1735322280782854516 0
+57/home/young_xster/codes/repos/forkify-project/src/js/view1735321945146750765 1
+62/home/young_xster/codes/repos/forkify-project/src/js/config.js1735319071206734063 0
 67/home/young_xster/codes/repos/forkify-project/src/sass/_header.scss1644221922000000000 0
 74/home/young_xster/codes/repos/forkify-project/src/sass/_searchResults.scss1644221922000000000 0
 65/home/young_xster/codes/repos/forkify-project/src/sass/_base.scss1644221922000000000 0
@@ -830,7 +831,7 @@
 87/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/filter.js1735296041494691905 0
 85/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/find.js1735296041503691681 0
 84/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/map.js1735296041597689352 0
-71/home/young_xster/codes/repos/forkify-project/src/js/view/recipeView.js1735304474868088452 0
+71/home/young_xster/codes/repos/forkify-project/src/js/view/recipeView.js1735322229649132128 0
 87/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/reduce.js1735296041631688508 0
 85/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/sort.js1735296041665687666 0
 101/home/young_xster/codes/repos/forkify-project/node_modules/lmdb/node_modules/node-addon-api/nothing.c1735292488585641053 0
@@ -1120,6 +1121,7 @@
 96/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/unique-by.js1735296041698686848 0
 95/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/from-hex.js1735296041521691236 0
 100/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/last-index-of.js1735296041589689550 0
+72/home/young_xster/codes/repos/forkify-project/src/js/view/resultsView.js1735321922195961016 0
 99/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/uint32-array.js1735296041695686922 0
 96/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/to-string.js1735296041687687121 0
 92/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/typed-array/index.js1735296041556690368 0
@@ -1912,7 +1914,7 @@
 70/home/young_xster/codes/repos/forkify-project/node_modules/detect-libc1735292488659676339 1
 100/home/young_xster/codes/repos/forkify-project/node_modules/electron-to-chromium/chromium-versions.js1735292488607651543 0
 77/home/young_xster/codes/repos/forkify-project/node_modules/entities/readme.md1735292488826755970 0
-69/home/young_xster/codes/repos/forkify-project/dist/index.f7626f62.css1735305527622588330 0
+69/home/young_xster/codes/repos/forkify-project/dist/index.f7626f62.css1735322103806434579 0
 93/home/young_xster/codes/repos/forkify-project/node_modules/core-js/actual/json/is-raw-json.js1735296041571689996 0
 81/home/young_xster/codes/repos/forkify-project/node_modules/entities/lib/encode.js1735292488762725452 0
 89/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/core/src/loadDotEnv.js1735292488872777905 0
@@ -3208,7 +3210,7 @@
 99/home/young_xster/codes/repos/forkify-project/node_modules/core-js/modules/es.json.to-string-tag.js1735296041447693070 0
 97/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/template.js1735292488970824634 0
 88/home/young_xster/codes/repos/forkify-project/node_modules/@swc/helpers/cjs/_extends.cjs1735292488804745480 0
-68/home/young_xster/codes/repos/forkify-project/dist/index.e37f48ea.js1735305534881391901 0
+68/home/young_xster/codes/repos/forkify-project/dist/index.e37f48ea.js1735322278487983973 0
 83/home/young_xster/codes/repos/forkify-project/node_modules/detect-libc/package.json1735292488593644868 0
 90/home/young_xster/codes/repos/forkify-project/node_modules/domutils/lib/stringify.d.ts.map1735292488805745957 0
 102/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/core/test/PublicEnvironment.test.js1735292488891786965 0
@@ -3404,7 +3406,7 @@
 93/home/young_xster/codes/repos/forkify-project/node_modules/core-js/stable/set/is-subset-of.js1735296041573689946 0
 112/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/transformer-html/node_modules/srcset/index.js1735292488610652974 0
 76/home/young_xster/codes/repos/forkify-project/node_modules/semver/preload.js1735292488784735943 0
-66/home/young_xster/codes/repos/forkify-project/src/js/controller.js1735305620897329282 0
+66/home/young_xster/codes/repos/forkify-project/src/js/controller.js1735321717086511742 0
 105/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/css-revert-value.js1735292488901791733 0
 106/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/chacha20-poly1305.js1735292488851767891 0
 82/home/young_xster/codes/repos/forkify-project/node_modules/@lezer/lr/dist/index.js1735292488720705425 0
@@ -3575,7 +3577,7 @@
 94/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/filter-reject.js1735296041492691955 0
 105/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/font-size-adjust.js1735292488929805084 0
 119/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/mdn-css-unicode-bidi-plaintext.js1735292488949814621 0
-72/home/young_xster/codes/repos/forkify-project/dist/index.e37f48ea.js.map1735305534883391847 0
+72/home/young_xster/codes/repos/forkify-project/dist/index.e37f48ea.js.map1735322278489984049 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/core/lib/public/Asset.js1735292488809747864 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/core-js/stable/iterator/index.js1735296041557690343 0
 79/home/young_xster/codes/repos/forkify-project/node_modules/browserslist/LICENSE1735292488593644868 0
@@ -3772,7 +3774,7 @@
 109/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/transformer-babel/lib/remapAstLocations.js1735292488737713532 0
 98/home/young_xster/codes/repos/forkify-project/node_modules/core-js/stable/array-buffer/transfer.js1735296041689687071 0
 88/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/browsers.js1735292488840762646 0
-73/home/young_xster/codes/repos/forkify-project/dist/index.f7626f62.css.map1735305527623588303 0
+73/home/young_xster/codes/repos/forkify-project/dist/index.f7626f62.css.map1735322103807434616 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/ordered-binary/.idea/modules.xml1735292488743716393 0
 90/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/regions/TG.js1735292488970824634 0
 97/home/young_xster/codes/repos/forkify-project/node_modules/core-js/actual/instance/starts-with.js1735296041668687591 0
@@ -3903,7 +3905,7 @@
 90/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/string/trim-start.js1735296041692686997 0
 82/home/young_xster/codes/repos/forkify-project/dist/forkify-project.3464ddca.js.map1735293093956648365 0
 98/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/css-table.js1735292488905793640 0
-50/home/young_xster/codes/repos/forkify-project/dist1735305534884391820 1
+50/home/young_xster/codes/repos/forkify-project/dist1735322278490984087 1
 113/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/core/test/fixtures/custom-targets/package.json1735292488917799362 0
 89/home/young_xster/codes/repos/forkify-project/node_modules/core-js/actual/string/split.js1735296041668687591 0
 101/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/utils/test/input/config/empty.json1735292488868775997 0
@@ -3932,7 +3934,7 @@
 83/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array/with.js1735296041705686674 0
 126/home/young_xster/codes/repos/forkify-project/node_modules/@swc/helpers/_/_class_static_private_field_destructure/package.json1735292488915798409 0
 88/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/profiler/src/types.js1735292488727708763 0
-68/home/young_xster/codes/repos/forkify-project/dist/logo.726d37a8.png1735305527478592266 0
+68/home/young_xster/codes/repos/forkify-project/dist/logo.726d37a8.png1735322103758432813 0
 97/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/core/test/EntryRequest.test.js1735292488857770752 0
 100/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/css3-colors.js1735292488910796024 0
 87/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/iterator/index.js1735296041549690542 0
@@ -4053,7 +4055,7 @@
 93/home/young_xster/codes/repos/forkify-project/node_modules/core-js/internals/collection-of.js1735296041399694260 0
 115/home/young_xster/codes/repos/forkify-project/node_modules/core-js/modules/es.object.get-own-property-descriptor.js1735296041451692971 0
 97/home/young_xster/codes/repos/forkify-project/node_modules/core-js/actual/symbol/async-dispose.js1735296041385694607 0
-61/home/young_xster/codes/repos/forkify-project/dist/index.html1735305527621588357 0
+61/home/young_xster/codes/repos/forkify-project/dist/index.html1735322103776433476 0
 79/home/young_xster/codes/repos/forkify-project/node_modules/dotenv/lib/main.d.ts1735292488731710671 0
 78/home/young_xster/codes/repos/forkify-project/node_modules/@lezer/lr/README.md1735292488728709241 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/postcss-value-parser/lib/unit.js1735292488659676339 0
@@ -4414,7 +4416,7 @@
 92/home/young_xster/codes/repos/forkify-project/node_modules/core-js/features/function/name.js1735296041607689104 0
 90/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/regions/PM.js1735292488964821773 0
 99/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/es6-module.js1735292488924802701 0
-69/home/young_xster/codes/repos/forkify-project/dist/icons.21bad73c.svg1735305527585589341 0
+69/home/young_xster/codes/repos/forkify-project/dist/icons.21bad73c.svg1735322103752432592 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/source-map/dist/types.js1735292488765726883 0
 90/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/transformer-postcss/src1735292488705698273 1
 78/home/young_xster/codes/repos/forkify-project/node_modules/ordered-binary/dist1735292488587642007 1
@@ -5264,7 +5266,7 @@
 94/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/types-internal/src/index.js1735292488714702564 0
 106/home/young_xster/codes/repos/forkify-project/node_modules/@swc/helpers/_/_async_to_generator/package.json1735292488894788396 0
 94/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/xhtml.js1735292488975827019 0
-71/home/young_xster/codes/repos/forkify-project/dist/favicon.8b2f57bf.png1735305527491591911 0
+71/home/young_xster/codes/repos/forkify-project/dist/favicon.8b2f57bf.png1735322103774433402 0
 99/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/types-internal/src/FileSystem.js1735292488675683968 0
 98/home/young_xster/codes/repos/forkify-project/node_modules/core-js/full/array/virtual/to-sorted.js1735296041684687195 0
 111/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/types-internal/src/FileCreateInvalidation.js1735292488657675385 0
@@ -6450,7 +6452,7 @@
 90/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/regions/GI.js1735292488931806038 0
 104/home/young_xster/codes/repos/forkify-project/node_modules/core-js/internals/is-array-iterator-method.js1735296041564690170 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/core-js/stable/array/for-each.js1735296041515691384 0
-69/home/young_xster/codes/repos/forkify-project/dist/icons.dfd7a6db.svg1735305527477592294 0
+69/home/young_xster/codes/repos/forkify-project/dist/icons.dfd7a6db.svg1735322103758432813 0
 95/home/young_xster/codes/repos/forkify-project/node_modules/core-js/proposals/using-statement.js1735296041700686798 0
 99/home/young_xster/codes/repos/forkify-project/node_modules/caniuse-lite/data/features/webworkers.js1735292488974826542 0
 95/home/young_xster/codes/repos/forkify-project/node_modules/core-js/stable/number/constructor.js1735296041410693987 0
@@ -6778,6 +6780,7 @@
 85/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/object/index.js1735296041549690542 0
 107/home/young_xster/codes/repos/forkify-project/node_modules/@swc/helpers/src/_class_apply_descriptor_set.mjs1735292488949814621 0
 86/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/object/assign.js1735296041384694632 0
+65/home/young_xster/codes/repos/forkify-project/src/js/view/view.js1735321955694116992 0
 91/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/graph/test/Graph.test.js1735292488778733082 0
 100/home/young_xster/codes/repos/forkify-project/node_modules/core-js/internals/advance-string-index.js1735296041375694854 0
 83/home/young_xster/codes/repos/forkify-project/node_modules/@parcel/profiler/LICENSE1735292488593644868 0
@@ -6897,7 +6900,7 @@
 75/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array1735296041705686674 1
 93/home/young_xster/codes/repos/forkify-project/node_modules/core-js/modules/es.array.concat.js1735296041442693194 0
 84/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array/index.js1735296041548690566 0
-61/home/young_xster/codes/repos/forkify-project/src/js/model.js1735305615765440133 0
+61/home/young_xster/codes/repos/forkify-project/src/js/model.js1735320760753746941 0
 92/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array/last-index-of.js1735296041587689600 0
 81/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array/at.js1735296041388694533 0
 84/home/young_xster/codes/repos/forkify-project/node_modules/core-js/es/array/slice.js1735296041654687939 0

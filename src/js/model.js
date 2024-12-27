@@ -4,11 +4,15 @@ import { getjson } from './helper.js';
 
 export const state = {
     recipe: {},
+    srch :{
+        query:'',
+        results : [],
+    },
 };
 
 export const loadRecipe = async function (id) {
     try{
-        const data = await getjson(`${API_URL}/${id}`);
+        const data = await getjson(`${API_URL}${id}`);
         
         const {recipe} = data.data;
         state.recipe = {
@@ -21,8 +25,27 @@ export const loadRecipe = async function (id) {
             cookingTime: recipe.cooking_time,
             ingredients: recipe.ingredients
         };
-        console.log(state.recipe);
+        
     } catch(err){
         console.error(err);
+        throw err;
     }
 };
+
+
+export const loadSearchResults = async function (query) {
+    try{
+        state.srch.query = query;
+        const data = await getjson(`${API_URL.slice(0,-1)}?search=${query}`);
+        
+
+        state.srch.results = data.data.recipes.map(rec => {return {
+            id :rec.id,title: rec.title , publisher:rec.publisher, image : rec.image,
+        }});
+        
+    }catch(err){
+        throw err;
+    }
+    
+};
+loadSearchResults('pizza');
