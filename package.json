@@ -23,6 +23,9 @@
     "parcel": "^2.13.3"
   },
   "dependencies": {
+    "core-js": "^3.39.0",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.14.1",
     "sass": "^1.26.10"
   }
 }
