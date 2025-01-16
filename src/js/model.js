@@ -1,5 +1,5 @@
 import { async } from 'regenerator-runtime';
-import { API_URL } from './config.js';
+import { API_URL , RES_PER_PAGE } from './config.js';
 import { getjson } from './helper.js';
 
 export const state = {
@@ -7,12 +7,15 @@ export const state = {
     srch :{
         query:'',
         results : [],
+        resultsPerPage: RES_PER_PAGE,
+        page : 1,
     },
 };
 
 export const loadRecipe = async function (id) {
     try{
         const data = await getjson(`${API_URL}${id}`);
+        console.log(data);
         
         const {recipe} = data.data;
         state.recipe = {
@@ -40,7 +43,7 @@ export const loadSearchResults = async function (query) {
         
 
         state.srch.results = data.data.recipes.map(rec => {return {
-            id :rec.id,title: rec.title , publisher:rec.publisher, image : rec.image,
+            id :rec.id,title: rec.title , publisher:rec.publisher, image :rec.image_url,
         }});
         
     }catch(err){
@@ -48,4 +51,9 @@ export const loadSearchResults = async function (query) {
     }
     
 };
-loadSearchResults('pizza');
+
+
+export const getSearchResultsPage = function(page = state.srch.page){
+    state.srch.page = page;
+    return state.srch.results.slice((page-1)*state.srch.resultsPerPage,page*state.srch.resultsPerPage);
+}

@@ -1,12 +1,18 @@
 import * as model from './model.js';
 import recipeView from './view/recipeView.js';
+import resultsView from './view/resultsView.js';
 import searchView from './view/searchView.js';
+import paginationView from './view/paginationView.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-const recipeContainer = document.querySelector('.recipe');
+// const recipeContainer = document.querySelector('.recipe');
+// document.querySelector('.results').value = '';
 
+if(module.hot){
+  module.hot.accept();
+}
 
 
 // https://forkify-api.herokuapp.com/v2
@@ -17,8 +23,10 @@ const recipeContainer = document.querySelector('.recipe');
 
 const controlRecipes = async function () {
   try{
+
+    
+
     let id = window.location.hash.slice(1);
-    console.log(id);
     if(!id) return;
     
     recipeView.renderSpinner();
@@ -26,12 +34,17 @@ const controlRecipes = async function () {
     //loading recipe
 
     await model.loadRecipe(id);
-    
+
+    // console.log(model.state.recipe);
     
 
     // rendering recipe
 
     recipeView.render(model.state.recipe);
+
+    // resultsView.render(model.state.srch.results);
+    controlPagination(model.state.srch.page);
+
 
 
   }catch(err){
@@ -43,8 +56,10 @@ const controlRecipes = async function () {
 
 
 
-const controlSerchResults = async function(){
+const controlSearchResults = async function(){
 try{
+
+  resultsView.renderSpinner(); 
 
   //get search query
   const query = searchView.getQuery();
@@ -53,8 +68,14 @@ try{
   //load results
   await model.loadSearchResults(query);
 
+
   //render results
-  console.log(model.state.srch.results);
+
+  // resultsView.render(model.state.srch.results);
+  controlPagination(model.state.srch.page);
+
+  // render initial pagination buttons
+  paginationView.render(model.state.srch);
   
 
 }catch (err){
@@ -62,11 +83,16 @@ try{
 }
 
 };
-controlSerchResults();
+
+const controlPagination = function (page){
+  resultsView.render(model.getSearchResultsPage(page));
+  paginationView.render(model.state.srch);
+}
 
 const init = function(){
   recipeView.addHandlerRender(controlRecipes);
-  searchView.addHandlerSearch(controlSerchResults);
+  searchView.addHandlerSearch(controlSearchResults);
+  paginationView.addHandlerClick(controlPagination);
 }
 init();
 
