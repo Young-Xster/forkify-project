@@ -2,11 +2,11 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "main": "index.js",
+  "default": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Young-Xster/forkify-project#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
     "core-js": "^3.39.0",
